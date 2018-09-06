@@ -27,9 +27,8 @@ Or run the following command directly without changing your `composer.json`:
 
 `composer require josegonzalez/cakephp-version:dev-master`
 
-## Usage
 
-In your app's `config/bootstrap.php` add:
+In your app's `config/bootstrap.php` add to load the Plugin:
 
 ```php
 Plugin::load('Josegonzalez/Version', ['bootstrap' => true]);
@@ -93,7 +92,7 @@ class PostEntity extends Entity {
 }
 ```
 
-Attach the behavior in the models you want with:
+Attach the behavior in the table initialize function you want with:
 
 ```php
 public function initialize(array $config) {
